@@ -1,0 +1,28 @@
+include ../mixins/mixins
+
+block variables
+    - var title = 'layout'
+    - var body_class = 'layout-page'
+    - var lang = 'en'
+
+doctype
+html(lang= lang)
+    head
+        title #{title}
+
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel='stylesheet', href="css/libs.css")
+        link(rel='stylesheet', href="css/styles.css")
+
+        block styles
+
+    body(class= body_class)
+        main(role="main")
+            block content
+
+        script(src="js/libs.js")
+        script(src="js/script.js")
+
+        block scripts
