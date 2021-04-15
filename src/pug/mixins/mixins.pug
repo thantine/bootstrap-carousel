@@ -2,7 +2,7 @@ mixin product-item(products)
   each product, idx in products
     - var colClass = idx == 0 ? 'active' : '';
 
-    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.col-xl-3(class=colClass)
+    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.col-xl-20(class=colClass)
       .product-item
         .text-center.product__inner
           figure.mb-3.product__image-container
