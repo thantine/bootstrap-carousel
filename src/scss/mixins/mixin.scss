@@ -1,0 +1,18 @@
+@mixin primaryBtn() {
+    background-color: $primary_bg_btn;
+    color: $primary_color_btn;
+    border-color: $primary_border_btn;
+}
+
+@mixin secondaryBtn() {
+    background-color: $secondary_bg_btn;
+    color: $secondary_color_btn;
+    border-color: $secondary_border_btn;
+}
+
+@mixin otherBtn() {
+    background-color: $other_bg_btn;
+    color: $other_color_btn;
+    border-color: $other_border_btn;
+}
+

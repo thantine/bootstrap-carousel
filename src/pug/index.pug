@@ -1,0 +1,86 @@
+extends ./layouts/layout.pug
+
+block variables
+    - var title = "Home Task"
+    - var body_class = "home-task"
+
+block styles
+
+block content
+    .container
+        .text-center.section__title
+            h2.title home task
+
+        .row
+            .col-12
+                #carouselProductsSlider.carousel.slide.list-products
+                    .carousel-inner.row.w-100.mx-auto
+                        +product-item([
+                            {
+                                title: 'Bali Bod Bundle',
+                                image: 'assets/images/product-images/product-1.jpg',
+                                price: '$99.30',
+                                compare_at_price: '$132.50',
+                                reviews_count: '(221)'
+                            },
+                            {
+                                title: 'Like A Virgin Hair Masque',
+                                image: 'assets/images/product-images/product-2.jpg',
+                                price: '$44.90',
+                                compare_at_price: '',
+                                reviews_count: '(3043)'
+                            },
+                            {
+                                title: 'Healthy Hair Bundle',
+                                image: 'assets/images/product-images/product-3.jpg',
+                                price: '$65.40',
+                                compare_at_price: '$79.80',
+                                reviews_count: '(4)'
+                            },
+                            {
+                                title: 'That\'s A Wrap Bundle',
+                                image: 'assets/images/product-images/product-4.jpg',
+                                price: '$52.80',
+                                compare_at_price: '$77.70',
+                                reviews_count: '(1218)'
+                            },
+                            {
+                                title: 'Healthy Hair Bundle',
+                                image: 'assets/images/product-images/product-3.jpg',
+                                price: '$65.40',
+                                compare_at_price: '$79.80',
+                                reviews_count: '(4)'
+                            },
+                            {
+                                title: 'That\'s A Wrap Bundle',
+                                image: 'assets/images/product-images/product-4.jpg',
+                                price: '$52.80',
+                                compare_at_price: '$77.70',
+                                reviews_count: '(1218)'
+                            },
+                            {
+                                title: 'Healthy Hair Bundle',
+                                image: 'assets/images/product-images/product-3.jpg',
+                                price: '$65.40',
+                                compare_at_price: '$79.80',
+                                reviews_count: '(4)'
+                            },
+                            {
+                                title: 'That\'s A Wrap Bundle',
+                                image: 'assets/images/product-images/product-4.jpg',
+                                price: '$52.80',
+                                compare_at_price: '$77.70',
+                                reviews_count: '(1218)'
+                            },
+                            
+                        ])
+
+                    a.carousel-control.carousel-control-prev(href="#carouselProductsSlider" role="button" data-slide="prev")
+                        span.carousel-control-icon.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control.carousel-control-next(href="#carouselProductsSlider" role="button" data-slide="next")
+                        span.carousel-control-icon.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next
+
+block scripts
+    

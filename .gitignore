@@ -1,0 +1,19 @@
+# Mac OSX
+.DS_Store
+
+# IDE
+.idea
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Npm & yarn
+/npm-debug.log
+node_modules
+yarn-error.log
+
+# Generated folder
+dist
+
+# Generated SVG sprite
+src/assets/icons/symbol
